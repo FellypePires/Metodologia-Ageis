@@ -1,0 +1,187 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #e2e8f0);
+  margin: 0;
+  padding: 0;
+  color: #2d3748;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Cabeçalho com azul profissional */
+header {
+  background: linear-gradient(135deg, #2c5282, #1a365d);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid #4299e1;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #ebf8ff;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #c3dafe;
+}
+
+header strong {
+  color: #90cdf4;
+  font-weight: 600;
+}
+
+/* Menu de navegação com azul suave */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  padding: 1.2rem 1rem;
+  background: linear-gradient(135deg, #ebf8ff, #c3dafe);
+  border-bottom: 2px solid #90cdf4;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menu button {
+  padding: 0.9rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #4299e1, #3182ce);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(66, 153, 225, 0.2);
+}
+
+.menu button:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 6px 15px rgba(66, 153, 225, 0.3);
+  background: linear-gradient(135deg, #63b3ed, #4299e1);
+}
+
+.menu button:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* Conteúdo principal com toque de cor */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+#conteudo {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: linear-gradient(135deg, #ffffff, #f7fafc);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e2e8f0;
+  position: relative;
+}
+
+#conteudo::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #4299e1, #38b2ac);
+  border-radius: 2px 0 0 2px;
+}
+
+#conteudo h2 {
+  color: #2c5282;
+  font-size: 2rem;
+  margin-top: 0;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+  font-weight: 600;
+}
+
+#conteudo p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a5568;
+}
+
+/* Rodapé com azul escuro */
+footer {
+  text-align: center;
+  background: linear-gradient(135deg, #1a202c, #2d3748);
+  color: #a0aec0;
+  padding: 1.5rem 1rem;
+  font-size: 1rem;
+  margin-top: 3rem;
+  border-top: 3px solid #4299e1;
+  box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}
+
+/* Animações suaves */
+#conteudo {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efeitos de hover para conteúdo */
+#conteudo h2 {
+  transition: all 0.3s ease;
+}
+
+#conteudo:hover h2 {
+  color: #4299e1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  .menu {
+    padding: 1rem 0.5rem;
+  }
+  
+  .menu button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+    margin: 0.3rem;
+  }
+  
+  #conteudo {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+  
+  #conteudo h2 {
+    font-size: 1.6rem;
+  }
+}
