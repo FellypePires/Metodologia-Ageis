@@ -7,6 +7,7 @@ Este projeto foi desenvolvido como parte da disciplina de Engenharia de Requisit
 👨‍🎓 Autor
 Nome: Fellype Gabriel Pires
 RA: 60000263
+
 🎯 Metodologias Abordadas
 1. Extreme Programming (XP)
 Desenvolvimento orientado a feedback contínuo
@@ -23,6 +24,7 @@ Foco nas pessoas e comunicação
 5. Microsoft Solutions Framework (MSF)
 Framework da Microsoft para gerenciamento de projetos
 Abordagem corporativa e estruturada
+
 🛠️ Tecnologias Utilizadas
 HTML5 - Estruturação do conteúdo
 CSS3 - Estilização e design responsivo
